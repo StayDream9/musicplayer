@@ -13,7 +13,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+    main.cpp \
+    main.cpp \
+    main.cpp \
+    main.cpp
 
 RESOURCES += qml.qrc
 
@@ -30,4 +34,16 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     MusicMainPage.qml \
-    MusicMain.qml
+    MusicMain.qml \
+    tabpage/Mine.qml \
+    main_tabpages/Mine.qml \
+    common/SectionContent.qml \
+    common/SectionDescription.qml \
+    common/SectionHeader.qml \
+    common/SectionSpacer.qml \
+    mine_pages/Local_music.qml \
+    mine_pages/Last_played.qml \
+    mine_pages/Download.qml \
+    mine_pages/Audio.qml \
+    mine_pages/Collect.qml \
+    test.qml
